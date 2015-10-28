@@ -1,3 +1,28 @@
-array = [1,2,3,4]
-for a in array:
-    print(a)
+score = 79
+
+if score >= 90:
+    print('grade is A')
+elif score >= 80:
+    print('grade is B')
+elif score >= 70:
+    print('grade is C')
+elif score >= 60:
+    print('grade is D')
+else:
+    print('grade is F')
+
+print('Nhap vao chi so can nang(kg):')
+weight = input()
+print('Nhap vao chi so chieu cao(met):')
+height = input()
+
+BMI = int(weight)/(float(height)*float(height))
+if BMI < 18.5:
+    print('Ban qua gay')
+elif 18.5 <= BMI < 25:
+    print('Ban Binh Thuong')
+elif 25 <= BMI < 30:
+    print('Ban Thua Can')
+else:
+    print('Ban Bi Beo Phi')
+
