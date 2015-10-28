@@ -1,0 +1,15 @@
+task = ['Huynh','Pham','Dang','Ha']
+for t in task:
+    print(t)
+
+for i in range(len(task)):
+    print('Number %d : %s' % (i,task[i]))
+
+name = 'DANG HA'
+
+for i in range(len(name)-1,-1,-1):
+    print(name[i])
+
+for i in reversed(name):
+    print(i)
+

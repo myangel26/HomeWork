@@ -1,0 +1,24 @@
+for i in range(1,10):
+    print('%4d' % i, end='')
+print('\n-------------------------------')
+
+for i in range(1,10):
+    print('\n%1d|' % i,end='')
+    for j in range(1,10):
+        print('%4d' % (i*j),end='')
+
+print('\n----------------------------')
+students = [("Alejandro", ["CompSci", "Physics"]),
+            ("Justin", ["Math", "CompSci", "Stats"]),
+            ("Ed", ["CompSci", "Accounting", "Economics"]),
+            ("Margot", ["InfSys", "Accounting", "Economics", "CommLaw"]),
+            ("Peter", ["Sociology", "Economics", "Law", "Stats", "Music"])]
+for name,subject in students:
+    print(name, 'takes', len(subject),"courses")
+
+count = 0
+for name,subject in students:
+    for sub in subject:
+        if sub == 'CompSci':
+            count += 1
+print(count)
